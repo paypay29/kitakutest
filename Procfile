@@ -1,1 +1,1 @@
-web: python line_test.py 
+python line_test.py 
