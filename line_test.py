@@ -17,7 +17,7 @@ handler = WebhookHandler(SECRET)
 def hello_world():
     return "hello world!"
 
-@app.route("/callback", methods=["POST"])
+@app.route("https://kitaku.herokuapp.com/callback", methods=["POST"])
 def callback():
 　signature = request.headers["X-Line-Signature"] 　body = request.get_data(as_text=True)
 　app.logger.info("Request body: " + body)
