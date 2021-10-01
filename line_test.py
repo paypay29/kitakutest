@@ -54,10 +54,10 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     if event.message.text == "グラフ":
-        line_bot_api.reply_message(
+        """line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(text="https://drive.google.com/file/d/1R75O4z86XKYgStka-2qTelsxGY8AFWFI/view?usp=sharing"))
-        
+        """
         line_bot_api.reply_message(
             event.reply_token,
             ImageSendMessage(
