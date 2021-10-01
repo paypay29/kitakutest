@@ -61,8 +61,8 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             ImageSendMessage(
-                original_content_url = "C:\Users\shoki00\asobi\kitaku\line_test\一時記録.jpg",
-                preview_image_url = "C:\Users\shoki00\asobi\kitaku\line_test\一時記録.jpg"))
+                original_content_url = r"C:\Users\shoki00\asobi\kitaku\line_test\一時記録.jpg",
+                preview_image_url = r"C:\Users\shoki00\asobi\kitaku\line_test\一時記録.jpg"))
         
     elif event.message.text == "グラフ表示":
         line_bot_api.reply_message(
