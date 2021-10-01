@@ -58,12 +58,12 @@ def handle_message(event):
             event.reply_token,
             TextSendMessage(text="https://drive.google.com/file/d/1R75O4z86XKYgStka-2qTelsxGY8AFWFI/view?usp=sharing"))
         
-        """line_bot_api.reply_message(
+        line_bot_api.reply_message(
             event.reply_token,
             ImageSendMessage(
                 original_content_url = "https://drive.google.com/file/d/1R75O4z86XKYgStka-2qTelsxGY8AFWFI/view?usp=sharing",
                 preview_image_url = "https://drive.google.com/file/d/1R75O4z86XKYgStka-2qTelsxGY8AFWFI/view?usp=sharing"))
-        """
+        
     elif event.message.text == "グラフ表示":
         line_bot_api.reply_message(
             event.reply_token,
