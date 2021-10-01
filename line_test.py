@@ -48,7 +48,7 @@ def callback():
 def handle_message(event):
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text="ok"))
+        TextSendMessage(text=event.message.text))
 
 # ポート番号の設定
 if __name__ == "__main__":
