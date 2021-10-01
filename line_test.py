@@ -33,7 +33,7 @@ def callback():
 
     # リクエストボディを取得
     body = request.get_data(as_text=True)
-    app.logger.info("Request body: " + body)
+    #app.logger.info("Request body: " + body)
 
     # 署名を検証し、問題なければhandleに定義されている関数を呼ぶ
     try:
