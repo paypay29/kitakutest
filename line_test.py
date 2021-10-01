@@ -61,8 +61,8 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             ImageSendMessage(
-                original_content_url = "https://1.bp.blogspot.com/-eaDZ7sDP9uY/Xhwqlve5SUI/AAAAAAABXBo/EcI2C2vim7w2WV6EYy3ap0QLirX7RPohgCNcBGAsYHQ/s400/pose_syanikamaeru_man.png",
-                preview_image_url = "https://1.bp.blogspot.com/-eaDZ7sDP9uY/Xhwqlve5SUI/AAAAAAABXBo/EcI2C2vim7w2WV6EYy3ap0QLirX7RPohgCNcBGAsYHQ/s400/pose_syanikamaeru_man.png"))
+                original_content_url = "https://drive.google.com/file/d/1R75O4z86XKYgStka-2qTelsxGY8AFWFI/view?usp=sharing",
+                preview_image_url = "https://drive.google.com/file/d/1R75O4z86XKYgStka-2qTelsxGY8AFWFI/view?usp=sharing"))
         
     elif event.message.text == "グラフ表示":
         line_bot_api.reply_message(
